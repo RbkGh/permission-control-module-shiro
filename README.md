@@ -1,7 +1,7 @@
 # Permission Control Module Service
 Demonstration
 ---
-![](https://github.com/RbkGh/permission-control-module-shiro/raw/master/image/img.png)
+![](https://github.com/RbkGh/permission-control-module-shiro/blob/main/image/img.png)
 ## Development Task
 ```text
 Using SpringBoot + Mybatis + Shiro + JWT to build a login and permission control module
