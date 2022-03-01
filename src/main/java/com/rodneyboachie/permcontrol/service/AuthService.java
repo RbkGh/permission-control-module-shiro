@@ -2,7 +2,7 @@ package com.rodneyboachie.permcontrol.service;
 
 import com.rodneyboachie.permcontrol.db.UserEntity;
 import com.rodneyboachie.permcontrol.exceptions.UnauthorizedException;
-import com.rodneyboachie.permcontrol.mapper.UserMapper;
+import com.rodneyboachie.permcontrol.mapper.UsersMapper;
 import com.rodneyboachie.permcontrol.security.BCryptPasswordService;
 import com.rodneyboachie.permcontrol.util.JWTUtil;
 import lombok.AllArgsConstructor;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class AuthService {
 
-    private UserMapper userMapper;
+    private UsersMapper userMapper;
 
     private BCryptPasswordService bCryptPasswordService;
 

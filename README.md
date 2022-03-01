@@ -24,17 +24,27 @@ APIs:
 |          |  2. Add a new product
 |          |  3. View only the products belonging to him
 
-```
-# Run tests
-### Run Project On Command line 
-1. docker-compose up <br>  
-2. ./mvnw test  [do this on mac after starting docker which brings mysql up] windows should be : mwnw test
-3. ./mvnw spring-boot:run <br>
-Application will be live on http://localhost:8080
 
+
+```
+
+# Requirements
+**Docker version 20.10.11+**
+
+# Run tests
+```text
+./mvnw test 
+```
 * _Tests encompass an 86% test coverage_
 
 * _TestContainers were used to build the tests so that integration tests could be easier_
+### Run Project On Command line 
+1. docker-compose up <br>  
+
+2. ./mvnw spring-boot:run <br>
+Application will be live on http://localhost:8080
+
+
 
 # Manual Testing 
 

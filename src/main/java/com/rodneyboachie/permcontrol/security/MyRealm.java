@@ -1,7 +1,7 @@
 package com.rodneyboachie.permcontrol.security;
 
 import com.rodneyboachie.permcontrol.db.UserEntity;
-import com.rodneyboachie.permcontrol.mapper.UserMapper;
+import com.rodneyboachie.permcontrol.mapper.UsersMapper;
 import com.rodneyboachie.permcontrol.util.JWTUtil;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -30,7 +30,7 @@ import java.util.Set;
 @AllArgsConstructor
 public class MyRealm extends JdbcRealm {
 
-    private UserMapper userService;
+    private UsersMapper userService;
 
     @Override
     public boolean supports(AuthenticationToken token) {

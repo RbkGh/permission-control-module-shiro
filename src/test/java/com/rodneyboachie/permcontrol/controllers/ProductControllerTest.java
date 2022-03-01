@@ -3,9 +3,9 @@ package com.rodneyboachie.permcontrol.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rodneyboachie.permcontrol.PermControlApplication;
-import com.rodneyboachie.permcontrol.config.ContainersEnvironment;
 import com.rodneyboachie.permcontrol.controllers.dto.ProductDTO;
 import com.rodneyboachie.permcontrol.controllers.dto.UserDTO;
+import com.rodneyboachie.permcontrol.helper.MySQLContainerContextInitializer;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,6 +15,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
@@ -33,8 +34,9 @@ import java.math.BigDecimal;
 @ActiveProfiles("test")
 @AutoConfigureMockMvc
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = PermControlApplication.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class ProductControllerTest extends ContainersEnvironment {
+@ContextConfiguration(initializers = { MySQLContainerContextInitializer.class })
+@SpringBootTest(classes = PermControlApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class ProductControllerTest{
 
     @Autowired
     private MockMvc mockMvc;
@@ -50,10 +52,11 @@ public class ProductControllerTest extends ContainersEnvironment {
 
     @Before
     public void setUp() throws Exception {
+        //mySQLContainer.start();
 
-        RODNEY_JWT = getJWT("rodney", "password");
-        MAX_JWT = getJWT("max", "password");
-        BEA_JWT = getJWT("bea", "password");
+        RODNEY_JWT = getJWT(RODNEY_USERNAME, "password");
+        MAX_JWT = getJWT(MAX_USERNAME, "password");
+        BEA_JWT = getJWT(BEA_USERNAME, "password");
     }
 
     @After

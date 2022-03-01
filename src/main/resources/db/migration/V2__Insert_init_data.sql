@@ -1,11 +1,11 @@
 -- < username = 'max', password = 'password'>
-insert ignore into user(username, password) values ('max', '$2a$12$s79MExz5XMA3xJjA6208oenKkTsnafRtl.0chxctQu.n.vP5soqJa');
+insert ignore into USER(username, password) values ('max', '$2a$12$s79MExz5XMA3xJjA6208oenKkTsnafRtl.0chxctQu.n.vP5soqJa');
 -- < username = 'rodney' ,password ='password'>
-insert ignore into user(username, password) values ('rodney', '$2a$12$s79MExz5XMA3xJjA6208oenKkTsnafRtl.0chxctQu.n.vP5soqJa');
+insert ignore into USER(username, password) values ('rodney', '$2a$12$s79MExz5XMA3xJjA6208oenKkTsnafRtl.0chxctQu.n.vP5soqJa');
 -- < username = 'lizzie', password = 'password'>
-insert ignore into user(username, password) values ('lizzie', '$2a$12$s79MExz5XMA3xJjA6208oenKkTsnafRtl.0chxctQu.n.vP5soqJa');
+insert ignore into USER(username, password) values ('lizzie', '$2a$12$s79MExz5XMA3xJjA6208oenKkTsnafRtl.0chxctQu.n.vP5soqJa');
 -- < username='bea', password = 'password'>
-insert ignore into user(username, password) values ('bea', '$2a$12$s79MExz5XMA3xJjA6208oenKkTsnafRtl.0chxctQu.n.vP5soqJa');
+insert ignore into USER(username, password) values ('bea', '$2a$12$s79MExz5XMA3xJjA6208oenKkTsnafRtl.0chxctQu.n.vP5soqJa');
 
 
 -- roles of users

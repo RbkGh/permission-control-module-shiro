@@ -7,7 +7,7 @@ services:
       - "./.data/db:/var/lib/mysql"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: perm-control-db
+      MYSQL_DATABASE: permcontdb
       MYSQL_USER: user
       MYSQL_PASSWORD: pass
     ports:
