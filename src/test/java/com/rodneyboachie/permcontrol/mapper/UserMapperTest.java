@@ -1,13 +1,11 @@
 package com.rodneyboachie.permcontrol.mapper;
 
 import com.rodneyboachie.permcontrol.db.UserEntity;
-import com.rodneyboachie.permcontrol.mapper.UserMapper;
 import org.junit.Assert;
 
 import org.junit.Before;
 
 import org.junit.Test;
-import org.junit.jupiter.api.Disabled;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -23,7 +21,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class UserMapperTest {
 
     @Mock
-    private UserMapper userMapper;
+    private UsersMapper userMapper;
 
     @Before
     public void setUp() {

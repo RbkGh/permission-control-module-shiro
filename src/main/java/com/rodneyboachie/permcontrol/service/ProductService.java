@@ -2,7 +2,7 @@ package com.rodneyboachie.permcontrol.service;
 
 import com.rodneyboachie.permcontrol.controllers.dto.ProductDTO;
 import com.rodneyboachie.permcontrol.db.ProductEntity;
-import com.rodneyboachie.permcontrol.mapper.ProductMapper;
+import com.rodneyboachie.permcontrol.mapper.ProductsMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 public class ProductService {
 
-    private ProductMapper productMapper;
+    private ProductsMapper productMapper;
 
     public List<ProductEntity> getAllProducts() {
         return productMapper.getAllProducts();
